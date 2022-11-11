@@ -1,0 +1,167 @@
+/* Common classes - (START) */
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-none {
+  display: none;
+}
+
+.error-text {
+  margin: 5px;
+  color: red;
+  font-style: italic;
+}
+
+.error-label {
+  color: red !important;
+}
+
+.error-input {
+  border-color: red;
+}
+
+/* Common classes - (END) */
+
+/* Mobile - (START) */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.choose-color {
+  position: relative;
+  width: fit-content;
+  margin: 15px auto;
+
+}
+
+.choose-color label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  padding: 0 3px;
+  background-color: white;
+  color: grey;
+  font-style: italic;
+}
+
+.choose-color label.label-in-border {
+  top: -8px;
+  color: black;
+}
+
+.choose-color input {
+  min-width: 300px;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 30px 0 10px;
+  border-radius: 5px;
+}
+
+.choose-color .color-display {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 12px;
+  right: 10px;
+  transform: rotate(45deg);
+  border: 1px solid black;
+}
+
+.profile-cards {
+  position: relative;
+  text-align: center;
+}
+
+.profile-cards div {
+  margin: 10px auto;
+  padding: 5px 0;
+  word-break: break-all;
+}
+
+.profile-cards .arrow {
+  position: absolute;
+  top: 130px;
+  width: 29px;
+  border: solid black;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-cards .arrow.right {
+  padding: 0 8px 0 0;
+  right: 10px;
+}
+
+.profile-cards .arrow.left {
+  padding: 0 0 0 8px;
+  left: 10px;
+}
+
+.profile-cards .arrow div {
+  display: inline-block;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 7px;
+}
+
+.profile-cards .arrow.right div {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.profile-cards .arrow.left div {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.profile-cards .card {
+  width: 200px;
+  height: 250px;
+  margin: 0 10px;
+  padding: 30px 20px;
+  border: 1px solid black;
+  vertical-align: top;
+}
+
+.profile-cards .card .image {
+  border-radius: 50%;
+}
+
+/* Mobile - (End) */
+
+/* Desktop - (START) */
+
+@media(min-width: 768px) {
+
+  .profile-cards .arrow {
+    cursor: pointer;
+  }
+
+  .profile-cards .arrow.right {
+    padding: 0 10px 0 0;
+    right: 20px;
+  }
+
+  .profile-cards .arrow.left {
+    padding: 0 0 0 10px;
+    left: 20px;
+  }
+
+
+  .profile-cards .arrow div {
+    padding: 8px;
+  }
+
+  .profile-cards .card {
+    width: 250px;
+  }
+
+}
+
+/* Desktop - (End) */

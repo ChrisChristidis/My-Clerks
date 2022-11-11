@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>My Clerks App</title>
+  <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1" />
+  <meta data-n-head="ssr" charset="utf-8" />
+  <meta data-n-head="ssr" name="format-detection" content="telephone=no" />
+  <script src="./MyClerk.js"></script>
+  <script src="./GetUserInfo.js"></script>
+  <link rel="stylesheet" type="text/css" href="./MyClerks.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="choose-color">
+      <label for="choose_bg_color">Cards Background Color</label>
+      <input type="text" name="ChooseBgColor" id="choose_bg_color" />
+      <div class="color-display"></div>
+      <div class="error-text d-none">Invalid background color</div>
+    </div>
+    <div class="profile-cards">
+      <div class="arrow left">
+        <div id="right_arrow"></div>
+      </div>
+      <div class="arrow right">
+        <div id="left_arrow"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
