@@ -9,7 +9,7 @@ Fire up a browser and go to https://chrischristidis.github.io/My-Clerks/
 - Use the arrows from the keyboard to go to the next or previous card, when you are not focused in the input.
 - The application is made mobile first, is responsive and it is tested in chrome and safari, for mobile, tablet and desktop.
 
-# MyClerks.html
+# index.html
 - Includes the js and CSS the appplication needs to be functional.
 - Has all static elements and their classes.
 
