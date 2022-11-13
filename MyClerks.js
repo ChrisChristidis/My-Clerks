@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Find the previous card can be displayed
     document.querySelector(".arrow.left").addEventListener("click", () => {
-        showPrevious(color);
+        showPreviousCard(color);
     });
 
     // Find the next card can be displayed
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function showPrevious (color) {
+    function showPreviousCard (color) {
 
         const first = document.querySelector(".d-inline-block");
 

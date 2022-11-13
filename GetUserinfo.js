@@ -1,7 +1,6 @@
 async function getUserInfo (page, cardsToDisplay, cardsCanFitToWindow) {
 
     const data = await fetch(
-        // "https://randomuser.me/api/?inc=picture,name,email,phone,location&noinfo&results=1"
         "https://randomuser.me/api/?inc=picture,name,email,phone,location&page=" + page + "&noinfo&results=" + cardsToDisplay
     )
         .then((response) => response.json())
@@ -47,9 +46,9 @@ async function getUserInfo (page, cardsToDisplay, cardsCanFitToWindow) {
 
         document.querySelector(".profile-cards").appendChild(card);
     })
-    console.log(data);
+
     if (cardsCanFitToWindow) {
         // Fetch the rest of Users from page 2, to prevent duplicate users
-        getUserInfo(2, 50, false);
+        getUserInfo(2, 50 - cardsToDisplay, false);
     }
 }
