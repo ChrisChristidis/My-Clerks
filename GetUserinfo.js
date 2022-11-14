@@ -20,7 +20,13 @@ async function getUserInfo (page, cardsToDisplay, cardsCanFitToWindow) {
         // Create the users' info
         const image = document.createElement("img");
         image.classList.add("image");
-        image.setAttribute("src", el.picture.thumbnail);
+        if (window.innerWidth > 1200) {
+            image.setAttribute("src", el.picture.large);
+        } else if (window.innerWidth > 768 && window.innerWidth <= 1200) {
+            image.setAttribute("src", el.picture.medium);
+        } else {
+            image.setAttribute("src", el.picture.thumbnail);
+        }
 
         const name = document.createElement("div");
         name.classList.add("name");

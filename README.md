@@ -34,4 +34,4 @@ Also contains the functions resizeWindow, changeBgColor, applyBgColor, removeBgC
 - Contains some Common classes.
 - Contains the CSS for mobile/tablet mode.
 - Contains the CSS for desktop mode.
-@media(min-width: 768px) is used, beacause the size of the CSS for desktop is really small. If the size of the CSS was bigger, MyClerks.css would have splitted into two files and they would have loaded, only when they were needed (mobile CSS would always load, but desktop CSS only when window width is more than 768px).
+@media(min-width: 768px) is used, beacause the size of the CSS for desktop is really small. If the size of the CSS was bigger, MyClerks.css would have splitted into two files and they would have loaded, only when they were needed (mobile CSS would always load, tablet CSS only when window width is more than 768px and desktop CSS only when window width is more than 1200px).

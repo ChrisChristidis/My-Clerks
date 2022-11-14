@@ -122,7 +122,7 @@ body {
 
 .profile-cards .card {
   width: 200px;
-  height: 250px;
+  height: 230px;
   margin: 0 10px;
   padding: 30px 20px;
   border: 1px solid black;
@@ -135,7 +135,7 @@ body {
 
 /* Mobile - (End) */
 
-/* Desktop - (START) */
+/* Tablet - (START) */
 
 @media(min-width: 768px) {
 
@@ -160,6 +160,19 @@ body {
 
   .profile-cards .card {
     width: 250px;
+    height: 250px;
+  }
+
+}
+
+/* Tablet - (End) */
+
+/* Desktop - (START) */
+
+@media(min-width: 1200px) {
+
+  .profile-cards .card {
+    height: 300px;
   }
 
 }
